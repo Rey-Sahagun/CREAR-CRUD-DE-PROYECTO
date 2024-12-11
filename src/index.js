@@ -4,7 +4,7 @@ const typeDefs = require('./schemas/taskSchema');
 const resolvers = require('./resolvers/taskResolver');
 
 const startServer = async () => {
-    await mongoose.connect('mongodb+srv://alancuevas:12345@clustertasks.dlf6l.mongodb.net/?retryWrites=true&w=majority&appName=clusterTasks');
+    await mongoose.connect('mongodb+srv://carrito_compras:1234@serviciosweb.9h9fw.mongodb.net/?retryWrites=true&w=majority&appName=ServiciosWeb');
     const server = new ApolloServer({typeDefs, resolvers});
 
     server.listen().then(({url}) => {
